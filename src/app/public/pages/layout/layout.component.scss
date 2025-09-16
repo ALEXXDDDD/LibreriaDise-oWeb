@@ -1,0 +1,120 @@
+/* Estilo general para el contenedor principal */
+.public-container {
+  width: 100%;
+  max-width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+  margin: 0 auto; /* Centra el contenedor en la página */
+  padding: 0 20px;
+}
+
+/* Estilo para la barra de navegación */
+.navbar {
+  display: flex;
+  align-items: center; /* Centra verticalmente todos los elementos */
+  justify-content: space-between; /* Espacio entre los elementos */
+  padding: 15px 0; /* Espacio superior e inferior */
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  width: 100%; /* Asegura que la barra de navegación ocupe todo el ancho */
+  box-sizing: border-box; /* Incluye padding y border en el ancho total */
+}
+
+.logo img {
+  height: 50px; /* Ajusta el tamaño del logo según sea necesario */
+  display: block;
+}
+
+.search-container {
+  flex-grow: 1; /* Permite que el campo de búsqueda crezca */
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 5px 10px;
+  max-width: 400px; /* Ajusta el ancho máximo de la barra de búsqueda */
+  width: 100%; /* Asegura que la barra de búsqueda sea responsiva */
+  margin-right: 20px; /* Espacio a la derecha de la barra de búsqueda */
+}
+
+.search-container input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 20px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 0 20px; /* Agrega margen a los lados para espaciar los enlaces */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #555; /* Color de texto similar a la imagen */
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links span {
+  color: #ddd; /* Color del separador */
+}
+
+.nav-links a:hover {
+  color: #000; /* Cambia el color al pasar el ratón */
+}
+
+.action-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.button {
+  background-color: #555; /* Color gris similar al botón de la imagen */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px; /* Tamaño de la fuente */
+  transition: background-color 0.3s ease; /* Transición suave al hacer hover */
+  margin: 0 5px; /* Agrega margen entre los botones */
+}
+
+.button i {
+  font-size: 18px; /* Tamaño del icono */
+}
+
+.button:hover {
+  background-color: #333; /* Color más oscuro al hacer hover */
+}
+
+/* Media Queries para diseño responsivo */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Apila los elementos en pantallas pequeñas */
+    align-items: center; /* Alinea los elementos al centro */
+    padding: 10px; /* Reduce el padding en pantallas pequeñas */
+  }
+
+  .search-container {
+    margin-bottom: 10px; /* Espacio debajo de la barra de búsqueda en pantallas pequeñas */
+  }
+
+  .nav-links {
+    flex-direction: column; /* Apila los enlaces de navegación verticalmente */
+    align-items: center;
+    gap: 10px; /* Reduce el gap en pantallas pequeñas */
+  }
+
+  .action-buttons {
+    justify-content: center; /* Centra los botones en pantallas pequeñas */
+    margin-top: 10px; /* Agrega espacio superior en pantallas pequeñas */
+  }
+}

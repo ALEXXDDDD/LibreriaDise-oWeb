@@ -1,0 +1,166 @@
+/* General */
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+/* Header */
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.buscador {
+    display: flex;
+    align-items: center;
+}
+
+.buscador input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.buscador button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Banner */
+
+.banner {
+    position: relative;
+
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.texto-banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+}
+
+.texto-banner h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.texto-banner p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.texto-banner a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #4CAF50;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Categorías */
+
+.categorias {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.categorias h2 {
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+.categorias-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.categoria {
+    text-align: center;
+}
+
+.categoria img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.categoria a {
+    display: block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Productos destacados */
+
+.destacados {
+    padding: 40px 0;
+}
+
+.destacados h2 {
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+.destacados-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.producto {
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.producto img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.producto h3 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+}

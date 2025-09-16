@@ -1,0 +1,45 @@
+<div class="private-container">
+    <header>
+        <div class="logo">logo</div>
+        <h1> Mi sitio  </h1>
+    </header>
+    <div class="body">
+        <aside>
+            <ul>
+                <li><a [routerLink]="['/dasboard']">Ventas</a></li>
+                <li><a [routerLink]="['/dasboard/devoluciones']">Devoluciones</a></li>
+                <li><a [routerLink]="['/dasboard/productos']">Productos</a></li>
+            </ul>
+        </aside>
+        <section>
+            <!-- <app-template-footer></app-template-footer> -->
+            <!-- <router-outlet></router-outlet> -->
+            <p>template-footer works!</p>
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Cantidad</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col">Productos </th>
+                    <th scope="col">Fecha</th>
+                    
+                  </tr>
+                </thead>
+                <tbody *ngFor="let d of devolucionResponse">
+                  <tr>
+                    <th scope="row">{{d.cantidad}}</th>
+                    <td>{{d.estado}}</td>
+                    <td>{{d.productos}}</td>
+                    <td>{{d.fecha}}</td>
+                    
+                  </tr>
+                </tbody>
+              </table>
+        </section>
+    </div>
+    <footer>
+        <p>
+            Cosas del pie de pagina
+        </p>
+    </footer>
+</div>

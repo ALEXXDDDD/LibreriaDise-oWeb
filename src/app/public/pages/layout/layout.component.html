@@ -1,0 +1,65 @@
+<div class="public-container">
+  <header class="navbar" *ngFor="let d of meny">
+    <!-- Logo -->
+    <div class="logo">
+      <img src="../../../../assets/images/Logo.jpeg" alt="Yazmin Librería" />
+    </div>
+
+    <!-- Barra de búsqueda -->
+    <div class="search-container">
+      <input type="text" placeholder="Buscar..." />
+    </div>
+
+    <!-- Enlaces de navegación -->
+    <nav class="nav-links">
+      <a routerLink="/home">Inicio</a>
+      <span>|</span>
+      <a routerLink="/contacts">Acerca</a>
+      <span>|</span>
+      <a [routerLink]="['/tienda']">Tienda</a>
+      <span>|</span>
+      <a routerLink="/header">Ayuda</a>
+    </nav>
+<!-- <a [routerLink]="['/login']">
+        <button class="button">
+          <i class="fas fa-user"></i> Login
+        </button>
+      </a> -->
+    <!-- Botones de login y carrito -->
+    <div class="action-buttons"  *ngFor="let x of d.subMenu" >
+      <!-- Botón de login que redirige a /auth -->
+      <a [routerLink]="[x.url]">
+        <button class="button">
+          <i class="fas fa-user"></i> {{x.name}}
+        </button>
+      </a>
+      
+      <!--      
+       <a routerLink="/auth/ingresar">
+        <button class="button">
+          <i class="fas fa-user"></i> Login
+        </button>
+      </a> -->
+
+
+      <!-- Botón de carrito que redirige a /carrito -->
+      <!-- <a routerLink="/carrito">
+        <button class="button">
+          <i class="fas fa-shopping-cart"></i> Carrito ({{carrito.length}})
+        </button>
+      </a> -->
+    </div>
+  </header>
+
+  <div class="body">
+    <section>
+      <router-outlet></router-outlet>
+    </section>
+  </div>
+
+  <footer>
+    <p>
+      <app-pie-pagina></app-pie-pagina>
+    </p>
+  </footer>
+</div>
