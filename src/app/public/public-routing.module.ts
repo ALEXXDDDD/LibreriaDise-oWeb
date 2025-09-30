@@ -12,6 +12,8 @@ import { TemplateHeaderComponent } from '../private/pages/template-header/templa
 import { LoginComponent } from '../auth/pages/login/login.component';
 import { PagBienvenidoComponent } from './pages/widget/pag-bienvenido/pag-bienvenido.component';
 import { DetalleEnvioComponentComponent } from './pages/detalle-envio/detalle-envio-component/detalle-envio-component.component';
+import { TemplateProductosComponent } from '../private/pages/template-productos/template-productos.component';
+import { TemplatePedidosComponent } from '../private/pages/template-pedidos/template-pedidos.component';
 
 const routes: Routes = [
     {
@@ -22,7 +24,8 @@ const routes: Routes = [
             { path: 'carrito', component: CarritoComponent},
             { path: 'dasboard', component:  TemplateComponent},
             { path: 'dasboard/devoluciones', component: TemplateSidebarComponent},
-            { path: 'dasboard/productos', component: TemplateHeaderComponent},
+            { path: 'dasboard/productos', component: TemplateProductosComponent},
+             { path: 'dasboard/pedidos', component: TemplatePedidosComponent},
             { path: 'tienda', component: TiendaPagesComponent},
             { path: 'login', component: LoginComponent},
             { path: 'detalle-envio', component: DetalleEnvioComponentComponent},

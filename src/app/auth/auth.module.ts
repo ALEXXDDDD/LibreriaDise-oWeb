@@ -3,7 +3,7 @@ import { CommonModule, DatePipe } from '@angular/common';
 import { LoginComponent } from './pages/login/login.component';
 import { LogoutComponent } from './pages/logout/logout.component';
 import { RecoveryPasswordComponent } from './pages/recovery-password/recovery-password.component';
-import { LayoutComponent } from './pages/layout/layout.component';
+
 import { AuthRoutingModule } from './auth-routing.module';
 import { SharedModule } from '../shared/shared.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -18,8 +18,7 @@ import { PagBienvenidoComponent } from '../public/pages/widget/pag-bienvenido/pa
     LogoutComponent,
     RecoveryPasswordComponent,
     PagBienvenidoComponent,
-    CargaPagesComponent,
-    LayoutComponent
+    CargaPagesComponent
   ],
   imports: [
     CommonModule,

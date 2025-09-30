@@ -15,7 +15,7 @@ import { ProductoResponse } from '../../../models/producto/productoResponse.mode
 export class HomeComponent implements OnInit {
   pokemons: any[] = [];
   pkmnLoadSt: LoadStateEnum = LoadStateEnum.None;
-   productoResponse:ProductoResponse[]  =[]
+  productoResponse:ProductoResponse[]  =[]
   loadStateEnum = LoadStateEnum;
   shared = "mundo";
   productos: Producto[] = [
@@ -56,7 +56,7 @@ export class HomeComponent implements OnInit {
     this._tiendaService.getAll().subscribe(
       {
         next:(data:ProductoResponse[])=>{this.productoResponse=data},
-        error:()=>{},
+        error:(err)=>{alert(err)},
         complete:()=>{}
       }
     )

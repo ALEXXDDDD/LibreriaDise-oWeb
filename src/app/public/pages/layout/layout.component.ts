@@ -51,7 +51,7 @@ export class LayoutComponent implements OnInit {
             subMenu:
             [
               {name:"Dasboard",url:"/dasboard", incon:"fa fa-fw fa-search text-dark mr-2"},
-              {name:"Carrito",url:"/carrito", incon:"fa fa-fw fa-search text-dark mr-2"},   
+              
               {name:"Cuenta",url:"/perfil", incon:"fa fa-fw fa-user text-dark mr-3"},     
             ]         
           }              
@@ -65,32 +65,12 @@ export class LayoutComponent implements OnInit {
             name:"Cliente", target:"Cliente",
             subMenu:
             [
-              {name:"Dasboard",url:"/dasboard", incon:"fa fa-fw fa-search text-dark mr-2"},    
+              {name:"Cuenta",url:"/perfil", incon:"fa fa-fw fa-user text-dark mr-3"},    
+              {name:"Carrito",url:"/carrito", incon:"fa fa-fw fa-search text-dark mr-2"},     
             ]
                   
-          },
-          {
-            name:"Cuenta", target:"TargetCuenta",
-            subMenu:
-            [
-              {name:"Cuenta",url:"/perfil", incon:"fa fa-fw fa-user text-dark mr-3"},     
-            ]
-          },
-          {
-            name:"Carrito", target:"TargetAdministrador",
-            subMenu:
-            [
-              {name:"Carrito",url:"/Carrito", incon:"fa fa-fw fa-search text-dark mr-2"},    
-            ]
-                  
-          },
-          {
-            name:"Carrito", target:"TargetCuenta",
-            subMenu:
-            [
-              {name:"Carrito",url:"/carrito", incon:"fa fa-fw fa-user text-dark mr-3"},     
-            ]
-          }            
+          }
+                     
         ]
       break;
        

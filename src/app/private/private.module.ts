@@ -7,6 +7,8 @@ import { TemplateComponent } from './pages/template/template.component';
 import { TemplateFooterComponent } from './pages/template-footer/template-footer.component';
 import { TemplateHeaderComponent } from './pages/template-header/template-header.component';
 import { TemplateSidebarComponent } from './pages/template-sidebar/template-sidebar.component';
+import { TemplateProductosComponent } from './pages/template-productos/template-productos.component';
+import { TemplatePedidosComponent } from './pages/template-pedidos/template-pedidos.component';
 
 
 
@@ -17,7 +19,9 @@ import { TemplateSidebarComponent } from './pages/template-sidebar/template-side
     TemplateComponent,
     TemplateFooterComponent,
     TemplateHeaderComponent,
-    TemplateSidebarComponent
+    TemplateSidebarComponent,
+    TemplateProductosComponent,
+    TemplatePedidosComponent
   ],
   imports: [
     CommonModule,
