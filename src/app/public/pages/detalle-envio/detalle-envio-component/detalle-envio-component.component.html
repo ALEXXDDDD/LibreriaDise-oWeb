@@ -21,11 +21,7 @@
       <p class="text-muted small">Categoría: {{ item.producto.categoria }}</p>
       <span class="fw-bold text-success">{{ item.producto.precio | currency:'USD' }}</span>
     </div>
-    <div class="col-md-4 d-flex justify-content-end align-items-center">
-      <button class="btn btn-outline-danger btn-sm" (click)="eliminarProducto(item)">
-        <i class="bi bi-trash"></i> Eliminar
-      </button>
-    </div>
+    
   </div>
 
   <!-- Dirección de envío -->

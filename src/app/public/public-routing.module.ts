@@ -14,6 +14,7 @@ import { PagBienvenidoComponent } from './pages/widget/pag-bienvenido/pag-bienve
 import { DetalleEnvioComponentComponent } from './pages/detalle-envio/detalle-envio-component/detalle-envio-component.component';
 import { TemplateProductosComponent } from '../private/pages/template-productos/template-productos.component';
 import { TemplatePedidosComponent } from '../private/pages/template-pedidos/template-pedidos.component';
+import { RegisterUserComponentComponent } from '../auth/pages/register-user-component/register-user-component.component';
 
 const routes: Routes = [
     {
@@ -29,8 +30,9 @@ const routes: Routes = [
             { path: 'tienda', component: TiendaPagesComponent},
             { path: 'login', component: LoginComponent},
             { path: 'detalle-envio', component: DetalleEnvioComponentComponent},
-            
+            { path: 'register-user', component:RegisterUserComponentComponent},
             { path: 'perfil', component:PagBienvenidoComponent},
+            { path: 'contacto', component:ContactsComponent},
             { path: '**', redirectTo: 'home' }
         ]
     }

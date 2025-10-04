@@ -30,6 +30,7 @@ export class CarritoComponent implements OnInit {
 
   eliminarProducto(item: CarritoItem): void {
     this.carritoSrv.removeProducto(item.producto.id);
+    this.actualizarTotal();
   }
 
   cambiarCantidad(item: CarritoItem, cantidad: number): void {
@@ -38,12 +39,15 @@ export class CarritoComponent implements OnInit {
 
   agregar1(item: CarritoItem): void {
     this.carritoSrv.editCantidad(item.producto.id, ++item.cantidad);
+    this.actualizarTotal(); 
   }
 
   quitar1(item: CarritoItem): void {
     if(item.cantidad >= 2) {
       this.carritoSrv.editCantidad(item.producto.id, --item.cantidad);
+      this.actualizarTotal();
     }
   }
+  
 
 }

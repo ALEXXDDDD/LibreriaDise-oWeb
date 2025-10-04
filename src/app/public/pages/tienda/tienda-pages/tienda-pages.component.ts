@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TiendaServiceService } from '../../../../services/tienda/tienda-service.service';
 import { ProductoResponse } from '../../../../models/producto/productoResponse.model';
+import { CarritoComprasService } from '../../../services/carrito-compras.service';
 
 @Component({
   selector: 'app-tienda-pages',
@@ -9,11 +10,9 @@ import { ProductoResponse } from '../../../../models/producto/productoResponse.m
 })
 export class TiendaPagesComponent implements OnInit {
  productoResponse:ProductoResponse[]  =[]
-
-
- 
   constructor(
-    private _tiendaService:TiendaServiceService
+    private _tiendaService:TiendaServiceService,
+    private _carritoService:CarritoComprasService, 
   )
   {
 
@@ -30,5 +29,9 @@ export class TiendaPagesComponent implements OnInit {
         complete:()=>{}
       }
     )
+  }
+  addProducto(prod:ProductoResponse)
+  {
+    this._carritoService.addProducto(prod);
   }
 }
